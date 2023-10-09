@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #2fa059e0;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*navbar creation*/
+
+.navbar {
+  justify-content: space-around;
+  align-items: right;
+  padding: 12px;
+  background-color: #1e8b9a;
+  color: white;
+  list-style-type: none;
+  overflow: hidden;
+  text-align: right;
+  border-radius: 50px;
+  margin: 50px;
+}
+
+/*picking nav links anchor tags*/
+.nav-links a {
+  color: white;
+}
+
+/*logo styling*/
+.logo {
+  font-size: 36px;
+  font-family: sans-serif;
+}
+
+.logo:hover {
+  transition: width 5s, height 5s, transform 2s;
+}
+
+/*psuedo class*/
+.menu {
+  display: flex;
+  margin: 50px;
+  text-align: center;
+  padding: 50px;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: blue;
+  font-size: 20px;
+
+  gap: 1 em; /*This makes the gap one times that of the parent size*/
+  font-size: 20px;
+}
+.Nav-bar {
+  display: flex;
+}
+.menu li:hover {
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 0px 14px;
+}
+
+.options {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*Responsive Design */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #2fa059e0;
+
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+}
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 0px 14px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Times New Roman", Times New Roman, monospace;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: blue;
+}
